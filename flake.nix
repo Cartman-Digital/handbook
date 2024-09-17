@@ -24,18 +24,19 @@
           ]);
 
         in
-        with pkgs;
         {
-          devShells.default = mkShell {
+          devShells.default = pkgs.mkShell {
             venvDir = "venv";
             inherit buildInputs;
           };
-          githubActions = nix-github-actions.lib.mkGithubMatrix { checks = self.packages; };
-
           packages = rec {
             mkdocs = pkgs.mkdocs;
             default = mkdocs;
           };
+          githubActions = nix-github-actions.lib.mkGithubMatrix {
+            checks = nixpkgs.lib.getAttrs [ "x86_64-linux" "x86_64-darwin" ] self.packages;
+          };
+
           apps = rec {
             mkdocs = flake-utils.lib.mkApp { drv = self.packages.${system}.mkdocs; };
             default = mkdocs;
