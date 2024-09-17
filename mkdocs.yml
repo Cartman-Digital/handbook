@@ -1,0 +1,35 @@
+site_name: Cartman Handbook
+
+# Make documentation artifact easier to browse locally
+use_directory_urls: false
+
+nav:
+  - Handbook:
+    - index.md
+    - Mission & Vision: index/mission-vision.md
+    - Core Values: index/core-values.md
+    - Code of Conduct: index/code-of-conduct.md
+  - Working at Cartman:
+    - Time logging: working-at-cartman/time-logging.md
+    - Oulu office: working-at-cartman/oulu-office.md
+  - Technical Practices: tech-guide.md
+  - Security: security-policy.md
+
+theme:
+  name: material
+  language: en
+  palette:
+    primary: custom
+    accent: custom
+  logo: assets/logo.svg
+  features:
+    - navigation.indexes
+    - navigation.tabs
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+
+copyright: Copyright &copy; 2024 <a href="https://www.cartman.fi/">Cartman Digital</a>.
