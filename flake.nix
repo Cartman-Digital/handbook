@@ -3,10 +3,8 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
-    nix-github-actions.url = "github:nix-community/nix-github-actions";
-    nix-github-actions.inputs.nixpkgs.follows = "nixpkgs";
   };
-  outputs = { self, nixpkgs, flake-utils, nix-github-actions }:
+  outputs = { self, nixpkgs, flake-utils }:
     flake-utils.lib.eachDefaultSystem
       (system:
         let
@@ -22,7 +20,6 @@
             mkdocs-material
             regex
           ]);
-
         in
         {
           devShells.default = pkgs.mkShell {
@@ -32,9 +29,6 @@
           packages = rec {
             mkdocs = pkgs.mkdocs;
             default = mkdocs;
-          };
-          githubActions = nix-github-actions.lib.mkGithubMatrix {
-            checks = nixpkgs.lib.getAttrs [ "x86_64-linux" "x86_64-darwin" ] self.packages;
           };
 
           apps = rec {
