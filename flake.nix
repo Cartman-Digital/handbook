@@ -11,6 +11,12 @@
         pkgs = import nixpkgs {
           inherit system;
         };
+        runtimeInputs = (with pkgs.python312Packages; [
+            markdown
+            mkdocs
+            mkdocs-material
+            regex
+          ]);
         buildInputs = with pkgs; [ pre-commit go-task ] ++
           (with pkgs.python312Packages; [
             pip
@@ -27,7 +33,15 @@
             inherit buildInputs;
           };
           packages = rec {
-            mkdocs = pkgs.mkdocs;
+            mkdocs = pkgs.writeShellApplication {
+              name = "mkdocs";
+
+              inherit runtimeInputs;
+
+              text = ''
+                mkdocs build
+              '';
+            };
             default = mkdocs;
           };
 
