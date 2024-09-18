@@ -30,15 +30,8 @@
           packages = rec {
             generate = pkgs.stdenvNoCC.mkDerivation {
               name = "mkdocs-html";
-
-              # allow-list filter for what we need: No readmes, nix files, source code
-              # of the project, etc... --> this avoids unnecessary rebuilds
-              src = pkgs.lib.sourceByRegex ./. [
-                "^docs.*"
-                "^templates.*"
-                "mkdocs.yml"
-              ];
-
+              src = ./.
+              
               inherit nativeBuildInputs;
               venvDir = "venv";
 
