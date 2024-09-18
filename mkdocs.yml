@@ -36,6 +36,7 @@ extra_css:
 
 markdown_extensions:
   - admonition
+  - pymdownx.blocks.html
 
 copyright: Copyright &copy; 2024 <a href="https://www.cartman.fi/">Cartman Digital</a>.
 
