@@ -1,4 +1,4 @@
-site_name: Cartman Handbook
+site_name: Handbook
 
 # Make documentation artifact easier to browse locally
 use_directory_urls: false
@@ -12,6 +12,7 @@ nav:
   - Working at Cartman:
     - Time logging: working-at-cartman/time-logging.md
     - Oulu office: working-at-cartman/oulu-office.md
+    - Health care: working-at-cartman/health-care.md
   - Technical Practices: tech-guide.md
   - Security: security-policy.md
 
@@ -42,6 +43,9 @@ repo_url: https://github.com/Cartman-Digital/handbook
 edit_uri: edit/main/docs/
 
 plugins:
+  - git-authors:
+      show_email_address: false
+      authorship_threshold_percent: 5
   - git-revision-date-localized:
       type: timeago
   - search

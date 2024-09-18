@@ -5,25 +5,23 @@
 Tietotie 2
 90460 OULUNSALO
 
-## Keys and access
+## Keys and Access
 
-Physical access works using NFC tags. Key can be requested from [Paavo Pokkinen](slack://user?team=T051F1E4FBP&id=U051LDSES20). 
+Physical access to the office is managed using NFC tags. You can request a key from [Paavo Pokkinen](slack://user?team=T051F1E4FBP&id=U051LDSES20).
 
-To pay attention to:
+Important points to note:
 
-- Office can be entered 24/7
-- There is no reception in the building
-- Entering through front door requires first showing the key to the reader, and after that entering PIN, and *. Reading the key can be bit flimsy: when the keyboard shows yellow light, the PIN can be entered.
-- There are key readers also inside the building. Some locks are not compatible with cliq2 keys, do not forcibly try to push the key to the lock.
+- The office is accessible 24/7.
+- There is no reception in the building.
+- To enter through the front door during the evening or night, first show the key to the reader, then enter the PIN followed by *. The key reader can be a bit sensitive: when the keyboard shows a yellow light, you can enter the PIN.
+- There are key readers inside the building as well. Some locks are not compatible with cliq2 keys; do not forcibly try to insert the key into these locks.
 
-## Space reservation
+## Common Space Reservations
 
-Common spaces (sauna, meeting rooms etc.) can be reserved from Aeroportti [booking service](https://start.1password.com/open/i?a=A77NHIUOAFCT3HFO4YPZHQSW3I&v=554znu2kv24b2qwaoi6j453d7y&i=l2apzttus3c3dmitylih6muxgq&h=cartman.1password.com).
+You can reserve common spaces such as the sauna and meeting rooms through the Aeroportti [booking service](https://start.1password.com/open/i?a=A77NHIUOAFCT3HFO4YPZHQSW3I&v=554znu2kv24b2qwaoi6j453d7y&i=l2apzttus3c3dmitylih6muxgq&h=cartman.1password.com).
 
-## Parking lots
+## Parking Lots
 
-There are dedicated parking spaces available for Cartman, do not park anywhere else. Guest parking (2h) is also available.
+Cartman has dedicated parking spaces. Please ensure you park only in these designated areas. To use the company parking lots, you need to register your license plate number in the Parkkipate system. You can request this registration and a dedicated parking space from [Paavo Pokkinen](slack://user?team=T051F1E4FBP&id=U051LDSES20).
 
-Parking spaces reserved for Cartman are: 29, 30, 41
-
-Using company parking lots requires entering license plate number to Parkkipate system, you can request that from [Paavo Pokkinen](slack://user?team=T051F1E4FBP&id=U051LDSES20)
+Guest parking is also available for up to 2 hours.
