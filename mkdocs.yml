@@ -44,3 +44,4 @@ edit_uri: edit/main/docs/
 plugins:
   - git-revision-date-localized:
       type: timeago
+  - search
