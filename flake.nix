@@ -45,7 +45,15 @@
               doCheck = false;
               dontInstall = true;
             };
+            serve = pkgs.writeScriptBin "mkdocs-serve" ''
+              #!/usr/bin/env bash
+              mkdocs serve
+            '';
             default = generate;
+          };
+          apps = rec {
+            serve = flake-utils.lib.mkApp { drv = self.packages.${system}.serve; };
+            default = serve;
           };
         }
       );
