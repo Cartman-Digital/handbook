@@ -25,6 +25,10 @@ theme:
   features:
     - navigation.indexes
     - navigation.tabs
+    - content.action.edit
+  icon:
+    repo: fontawesome/brands/github
+
 
 extra_css:
   - stylesheets/extra.css
@@ -33,3 +37,10 @@ markdown_extensions:
   - admonition
 
 copyright: Copyright &copy; 2024 <a href="https://www.cartman.fi/">Cartman Digital</a>.
+
+repo_url: https://github.com/Cartman-Digital/handbook
+edit_uri: edit/main/docs/
+
+plugins:
+  - git-revision-date-localized:
+      type: timeago
