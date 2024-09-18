@@ -27,7 +27,7 @@
             inherit buildInputs;
           };
           packages = rec {
-            generate = pkgs.stdenv.mkDerivation {
+            generate = pkgs.stdenvNoCC.mkDerivation {
               name = "mkdocs-html";
 
               # allow-list filter for what we need: No readmes, nix files, source code
