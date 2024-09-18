@@ -13,12 +13,11 @@ jobs:
     permissions:
       contents: 'read'
       id-token: 'write'
-      packages: 'read'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: '0'
+          fetch-depth: 0
 
       - id: 'auth'
         uses: 'google-github-actions/auth@v1'
