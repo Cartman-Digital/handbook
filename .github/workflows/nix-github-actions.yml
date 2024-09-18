@@ -17,6 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: '0'
 
       - id: 'auth'
         uses: 'google-github-actions/auth@v1'
@@ -47,3 +49,6 @@ jobs:
           gsutil -m setmeta -h "Cache-Control:public, max-age=3600, s-maxage=7200" "gs://www-cartman-handbook-prod/**/*.jpg" || true && \
           gsutil -m setmeta -h "Cache-Control:public, max-age=3600, s-maxage=7200" "gs://www-cartman-handbook-prod/**/*.svg" || true && \
           gsutil -m setmeta -h "Cache-Control:public, max-age=3600, s-maxage=7200" "gs://www-cartman-handbook-prod/**/*.json" || true
+
+      - name: Invalidate CDN cache
+        run: gcloud --project www-cartman-fi compute url-maps invalidate-cdn-cache site --path "/*" --async
