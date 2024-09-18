@@ -1,7 +1,13 @@
+---
+hide:
+  - toc
+---
+
 # Core values
 
-These are the core values of our Remote Team:
+These are the core values of our Team:
 
+/// html | div[style='float: left; width: 50%;']
 ## Customer Focus
 
 Triple focus on customers (our customers, their customers, end customers). Maybe also internal customers and valued partners.
@@ -18,7 +24,9 @@ What this means for Cartman:
 We care about each other’s well-being. We work in sustainable manner and raise up any issues we might have and ask each other how we’re doing. We treat each other with respect.
 
 Our solutions last for long term and are friendly for environment. Our solutions should not excessively waste computing resources.
+///
 
+/// html | div[style='float: left; width: 50%;']
 ## Trust and Transparency
 
 - We communicate to our customers and partners with good intentions and transparency.
@@ -33,3 +41,7 @@ Our solutions last for long term and are friendly for environment. Our solutions
 - We adhere to YAGNI-principle (you ain’t gonna need it): it means avoid implementing features and are not needed right now
 - We aim to make informed and data-driven decisions, not just based on gut feeling
 - Ask ideas and feedback when in doubt
+///
+
+/// html | div[style='clear: both;']
+///
