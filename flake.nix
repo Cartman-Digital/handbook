@@ -17,7 +17,7 @@
             markdown
             mkdocs
             mkdocs-material
-            mkdocs-git-revision-date-localized-plugin
+#            mkdocs-git-revision-date-localized-plugin
             regex
           ];
         buildInputs = with pkgs; [ pre-commit go-task ] ++ (nativeBuildInputs);
