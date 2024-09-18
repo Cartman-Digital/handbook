@@ -52,11 +52,6 @@
             };
             default = generate;
           };
-
-          apps = rec {
-            mkdocs = flake-utils.lib.mkApp { drv = self.packages.${system}.mkdocs; };
-            default = mkdocs;
-          };
         }
       );
       
