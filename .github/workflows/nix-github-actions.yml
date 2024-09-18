@@ -26,7 +26,7 @@ jobs:
           token_format: 'access_token'
 
       - uses: cachix/install-nix-action@v27
-      - run: nix run . build
+      - run: nix build .
 
       - name: 'Set up Cloud SDK'
         uses: 'google-github-actions/setup-gcloud@v1'
@@ -35,4 +35,4 @@ jobs:
           skip_install: true
 
       - name: Upload
-        run: gsutil -m rsync -d -r build gs://www-cartman-handbook-prod
+        run: cd result; gsutil -m rsync -d -r . gs://www-cartman-handbook-prod

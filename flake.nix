@@ -11,21 +11,15 @@
         pkgs = import nixpkgs {
           inherit system;
         };
-        runtimeInputs = (with pkgs.python312Packages; [
-            markdown
-            mkdocs
-            mkdocs-material
-            regex
-          ]);
-        buildInputs = with pkgs; [ pre-commit go-task ] ++
-          (with pkgs.python312Packages; [
+        nativeBuildInputs = with pkgs.python312Packages; [
             pip
             venvShellHook
             markdown
             mkdocs
             mkdocs-material
             regex
-          ]);
+          ];
+        buildInputs = with pkgs; [ pre-commit go-task ] ++ (nativeBuildInputs);
         in
         {
           devShells.default = pkgs.mkShell {
@@ -33,16 +27,30 @@
             inherit buildInputs;
           };
           packages = rec {
-            mkdocs = pkgs.writeShellApplication {
-              name = "mkdocs";
+            generate = pkgs.stdenv.mkDerivation {
+              name = "mkdocs-html";
 
-              inherit runtimeInputs;
+              # allow-list filter for what we need: No readmes, nix files, source code
+              # of the project, etc... --> this avoids unnecessary rebuilds
+              src = pkgs.lib.sourceByRegex ./. [
+                "^docs.*"
+                "^templates.*"
+                "mkdocs.yml"
+              ];
 
-              text = ''
-                mkdocs build
+              inherit nativeBuildInputs;
+              venvDir = "venv";
+
+              buildPhase = ''
+                mkdocs build --strict -d $out
               '';
+
+              # This derivation does no source code compilation or testing
+              dontConfigure = true;
+              doCheck = false;
+              dontInstall = true;
             };
-            default = mkdocs;
+            default = generate;
           };
 
           apps = rec {
