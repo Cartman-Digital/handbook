@@ -26,7 +26,9 @@ jobs:
           token_format: 'access_token'
 
       - uses: cachix/install-nix-action@v27
-      - run: nix build .
+      - run: nix build path:.
+        # We're using above, so that we can have access to .git in derivation 
+        #- run: nix build .
 
       - name: 'Set up Cloud SDK'
         uses: 'google-github-actions/setup-gcloud@v1'

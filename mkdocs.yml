@@ -41,6 +41,6 @@ copyright: Copyright &copy; 2024 <a href="https://www.cartman.fi/">Cartman Digit
 repo_url: https://github.com/Cartman-Digital/handbook
 edit_uri: edit/main/docs/
 
-# plugins:
-#   - git-revision-date-localized:
-#       type: timeago
+plugins:
+  - git-revision-date-localized:
+      type: timeago

@@ -11,15 +11,15 @@
         pkgs = import nixpkgs {
           inherit system;
         };
-        nativeBuildInputs = with pkgs.python312Packages; [
+        nativeBuildInputs = [ pkgs.git ] ++ (with pkgs.python312Packages; [
             pip
             venvShellHook
             markdown
             mkdocs
             mkdocs-material
-#            mkdocs-git-revision-date-localized-plugin
+            mkdocs-git-revision-date-localized-plugin
             regex
-          ];
+          ]);
         buildInputs = with pkgs; [ pre-commit go-task ] ++ (nativeBuildInputs);
         in
         {
@@ -31,13 +31,7 @@
             generate = pkgs.stdenvNoCC.mkDerivation {
               name = "mkdocs-html";
 
-              # allow-list filter for what we need: No readmes, nix files, source code
-              # of the project, etc... --> this avoids unnecessary rebuilds
-              src = pkgs.lib.sourceByRegex ./. [
-                "^docs.*"
-                "^templates.*"
-                "mkdocs.yml"
-              ];
+              src = ./.;
 
               inherit nativeBuildInputs;
               venvDir = "venv";
