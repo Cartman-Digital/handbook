@@ -2,3 +2,4 @@ venv/
 .direnv/
 site/
 result
+.cache

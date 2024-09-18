@@ -15,7 +15,9 @@ nav:
     - Time logging: working-at-cartman/time-logging.md
     - Oulu office: working-at-cartman/oulu-office.md
     - Health care: working-at-cartman/health-care.md
-  - Technical Practices: tech-guide.md
+  - Technical Excellence:
+    - tech/index.md
+    - tech/tech-radar.md
   - Security: security-policy.md
 
 theme:
