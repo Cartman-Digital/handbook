@@ -1,4 +1,5 @@
 site_name: Handbook
+site_url: https://www.cartman.fi/handbook/
 
 # Make documentation artifact easier to browse locally
 use_directory_urls: false
@@ -27,6 +28,7 @@ theme:
   features:
     - navigation.indexes
     - navigation.tabs
+    - navigation.instant
     - content.action.edit
   icon:
     repo: fontawesome/brands/github
