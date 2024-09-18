@@ -30,7 +30,7 @@ Personal devices used for work purposes (BYOD) must adhere to all the above guid
 
 ## **Incident Reporting**
 
-Any suspected security incidents, breaches, or vulnerabilities should be reported immediately to the designated security officer, CTO @Paavo Pokkinen.
+Any suspected security incidents, breaches, or vulnerabilities should be reported immediately to the designated security officer, [Paavo Pokkinen](slack://user?team=T051F1E4FBP&id=U051LDSES20).
 
 ## **Security Training**
 
