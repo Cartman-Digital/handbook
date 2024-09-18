@@ -9,15 +9,15 @@ Welcome to Cartman Digital! This section provides essential information about wo
 
 ## Time Logging
 
-Accurate time logging is crucial for our operations. Please refer to the [Time Logging](./working-at-cartman/time-logging.md) section for detailed policies and instructions on how to log your hours effectively.
+Accurate time logging is crucial for our operations. Please refer to the [Time Logging](time-logging.md) section for detailed policies and instructions on how to log your hours effectively.
 
 ## Health Care
 
-We care about your well-being. Our occupational health care services are provided by [Heltti](https://heltti.fi/). For more information, visit the [Health Care](./working-at-cartman/health-care.md) section.
+We care about your well-being. Our occupational health care services are provided by [Heltti](https://heltti.fi/). For more information, visit the [Health Care](health-care.md) section.
 
 ## Oulu Office
 
-If you are working or visiting from our Oulu office, you can find the address, access instructions, and other relevant details in the [Oulu Office](./working-at-cartman/oulu-office.md) section.
+If you are working or visiting from our Oulu office, you can find the address, access instructions, and other relevant details in the [Oulu Office](oulu-office.md) section.
 
 ## Feedback and Suggestions
 

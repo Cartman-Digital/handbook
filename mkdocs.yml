@@ -31,6 +31,16 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
+extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Cartman-Digital
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/cartmandigital/
+
 
 extra_css:
   - stylesheets/extra.css
@@ -41,6 +51,7 @@ markdown_extensions:
 
 copyright: Copyright &copy; 2024 <a href="https://www.cartman.fi/">Cartman Digital</a>.
 
+repo_name: Cartman-Digital/handbook
 repo_url: https://github.com/Cartman-Digital/handbook
 edit_uri: edit/main/docs/
 
