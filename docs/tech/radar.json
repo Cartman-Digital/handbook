@@ -115,6 +115,14 @@
       "link": "https://docs.xtdb.com/"
     },
     {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "BigQuery",
+      "active": true,
+      "moved": 0,
+      "link": "https://docs.xtdb.com/"
+    },
+    {
       "quadrant": 3,
       "ring": 3,
       "label": "Magento",

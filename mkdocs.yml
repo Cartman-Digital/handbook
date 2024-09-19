@@ -31,7 +31,6 @@ theme:
     - navigation.indexes
     - navigation.tabs
     - navigation.instant
-    - navigation.path
     - navigation.top
     - content.action.edit
   icon:

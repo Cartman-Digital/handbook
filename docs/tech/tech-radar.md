@@ -3,6 +3,11 @@ hide:
  - navigation
  - toc
 ---
+
+!!! note
+
+    This is work in progress.
+
 <style>
   .md-typeset h1,
   .md-content__button {
@@ -18,7 +23,6 @@ fetch('./radar.json').then(function(response) {
   return response.json();
 }).then(function(data) {
   radar_visualization({
-    repo_url: "https://github.com/zalando/tech-radar",
     title: "Cartman Tech Radar",
     svg_id: "radar",
     date: data.date,
