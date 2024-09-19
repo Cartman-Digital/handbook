@@ -18,6 +18,7 @@ nav:
   - Technical Excellence:
     - tech/index.md
     - tech/tech-radar.md
+    - tech/clojure-libraries.md
   - Security: security-policy.md
 
 theme:
