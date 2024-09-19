@@ -6,7 +6,7 @@ hide:
 
 !!! note
 
-    This is work in progress.
+    This section is currently under development and may change.
 
 <style>
   .md-typeset h1,
@@ -40,7 +40,7 @@ fetch('./radar.json').then(function(response) {
     quadrants: [
       { name: "Languages & Frameworks" },
       { name: "Infrastructure & Tools" },
-      { name: "Datastores" },
+      { name: "Datastores & Data Management" },
       { name: "Platforms & Ecosystems" },
     ],
     rings: [

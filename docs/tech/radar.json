@@ -24,6 +24,13 @@
     },
     {
       "quadrant": 0,
+      "ring": 0,
+      "label": "OpenAPI (Swagger)",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "quadrant": 0,
       "ring": 1,
       "label": "Go",
       "active": true,
@@ -52,7 +59,7 @@
     },
     {
       "quadrant": 1,
-      "ring": 1,
+      "ring": 0,
       "label": "GCP",
       "active": true,
       "moved": 0
@@ -87,6 +94,13 @@
     },
     {
       "quadrant": 1,
+      "ring": 1,
+      "label": "OpenAI API's",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "quadrant": 1,
       "ring": 3,
       "label": "Ansible",
       "active": true,
@@ -96,6 +110,13 @@
       "quadrant": 2,
       "ring": 0,
       "label": "Postgres",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "dbt",
       "active": true,
       "moved": 0
     },
