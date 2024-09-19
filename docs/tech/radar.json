@@ -159,6 +159,14 @@
     },
     {
       "quadrant": 3,
+      "ring": 2,
+      "label": "swell",
+      "active": true,
+      "moved": 0,
+      "link": "https://www.swell.is/"
+    },
+    {
+      "quadrant": 3,
       "ring": 1,
       "label": "Commerce Tools",
       "active": true,
