@@ -19,6 +19,7 @@ nav:
     - tech/index.md
     - tech/tech-radar.md
     - tech/clojure-libraries.md
+    - tech/cursor-ide.md
   - Security: security-policy.md
 
 theme:
